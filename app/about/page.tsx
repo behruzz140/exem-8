@@ -40,11 +40,11 @@ function Index() {
     
     <div>
       <Container>
-        <div className='flex gap-[12px] mt-[24px] flex-wrap max-sm:justify-center'>
+        <div className="flex gap-[12px] mt-[24px] flex-wrap max-sm:justify-center">
           {
             arr.map((e,i) => {
               return (
-                <button key={i} onClick={() => setAboutActive(e)} className={`py-[14px] px-[28px] w-[213px] font-bold text-[18px] rounded-xl max-sm:w-[100%] ${aboutactive == e? "bg-[#FF6F14] text-white duration-300" : "bg-white text-black duration-300"}`}>{e}</button>
+                <button key={i} onClick={() => setAboutActive(e)} className={aboutactive == e? "bg-[#FF6F14] text-white duration-300 py-[14px] px-[28px] w-[213px] font-bold text-[18px] rounded-xl max-sm:w-[100%] " : "bg-white text-black duration-300 py-[14px] px-[28px] w-[213px] font-bold text-[18px] rounded-xl max-sm:w-[100%] "}>{e}</button>
               )
             })
           }
